@@ -1,0 +1,174 @@
+#usda 1.0
+(
+    customLayerData = {
+        string creator = "URDF USD Converter v0.1.3"
+    }
+    defaultPrim = "robok"
+    doc = """Generated from Composed Stage of root layer C:\\Users\\mkare\\AppData\\Local\\Temp\\tmplqpxs8ih\\robok.usdc
+
+
+Generated from Composed Stage of root layer C:\\Users\\mkare\\AppData\\Local\\Temp\\urdf_import_robok_c7xgcc__\\usdex_robok\\robok.usdc
+
+
+Generated from Composed Stage of root layer C:\\Users\\mkare\\AppData\\Local\\Temp\\urdf_import_robok_c7xgcc__\\temp_robok\\robok.usd
+"""
+    kilogramsPerUnit = 1
+    metersPerUnit = 1
+    upAxis = "Z"
+)
+
+over "robok" (
+    prepend apiSchemas = ["IsaacRobotAPI"]
+)
+{
+    prepend rel isaac:physics:robotJoints = [
+        </robok/Physics/hipyawl>,
+        </robok/Physics/hipyawr>,
+        </robok/Physics/hiprolll>,
+        </robok/Physics/hippitchl>,
+        </robok/Physics/anklepitchl>,
+        </robok/Physics/footl>,
+        </robok/Physics/hiprollr>,
+        </robok/Physics/hippitchr>,
+        </robok/Physics/anklepitchr>,
+        </robok/Physics/footr>,
+    ]
+    prepend rel isaac:physics:robotLinks = [
+        </robok/Geometry/base_link>,
+        </robok/Geometry/base_link/left_hipyaw>,
+        </robok/Geometry/base_link/left_hipyaw/left_hiproll>,
+        </robok/Geometry/base_link/left_hipyaw/left_hiproll/left_hippitch>,
+        </robok/Geometry/base_link/left_hipyaw/left_hiproll/left_hippitch/left_anklepitch>,
+        </robok/Geometry/base_link/left_hipyaw/left_hiproll/left_hippitch/left_anklepitch/left_foot>,
+        </robok/Geometry/base_link/right_hipyaw>,
+        </robok/Geometry/base_link/right_hipyaw/right_hiproll>,
+        </robok/Geometry/base_link/right_hipyaw/right_hiproll/right_hippitch>,
+        </robok/Geometry/base_link/right_hipyaw/right_hiproll/right_hippitch/right_anklepitch>,
+        </robok/Geometry/base_link/right_hipyaw/right_hiproll/right_hippitch/right_anklepitch/right_foot>,
+    ]
+    token isaac:robotType = "Default"
+
+    over "Geometry"
+    {
+        over "base_link" (
+            prepend apiSchemas = ["IsaacLinkAPI"]
+        )
+        {
+            over "left_hipyaw" (
+                prepend apiSchemas = ["IsaacLinkAPI"]
+            )
+            {
+                over "left_hiproll" (
+                    prepend apiSchemas = ["IsaacLinkAPI"]
+                )
+                {
+                    over "left_hippitch" (
+                        prepend apiSchemas = ["IsaacLinkAPI"]
+                    )
+                    {
+                        over "left_anklepitch" (
+                            prepend apiSchemas = ["IsaacLinkAPI"]
+                        )
+                        {
+                            over "left_foot" (
+                                prepend apiSchemas = ["IsaacLinkAPI"]
+                            )
+                            {
+                            }
+                        }
+                    }
+                }
+            }
+
+            over "right_hipyaw" (
+                prepend apiSchemas = ["IsaacLinkAPI"]
+            )
+            {
+                over "right_hiproll" (
+                    prepend apiSchemas = ["IsaacLinkAPI"]
+                )
+                {
+                    over "right_hippitch" (
+                        prepend apiSchemas = ["IsaacLinkAPI"]
+                    )
+                    {
+                        over "right_anklepitch" (
+                            prepend apiSchemas = ["IsaacLinkAPI"]
+                        )
+                        {
+                            over "right_foot" (
+                                prepend apiSchemas = ["IsaacLinkAPI"]
+                            )
+                            {
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    over "Physics"
+    {
+        over "hipyawl" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "hiprolll" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "hippitchl" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "anklepitchl" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "footl" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "hipyawr" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "hiprollr" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "hippitchr" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "anklepitchr" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+
+        over "footr" (
+            prepend apiSchemas = ["IsaacJointAPI"]
+        )
+        {
+        }
+    }
+}
+

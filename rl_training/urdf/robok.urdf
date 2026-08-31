@@ -1,0 +1,627 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="robok">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-0.0107845425844135 -0.142447918607034 -0.00419433105634964"
+        rpy="0 0 0" />
+      <mass
+        value="0.28" />
+      <inertia
+        ixx="0.00428227718676599"
+        ixy="7.56023828320183E-06"
+        ixz="9.14996846504774E-06"
+        iyy="0.00137485448183489"
+        iyz="8.63391596716759E-06"
+        izz="0.00385649886773093" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robok/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robok/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="left_hipyaw">
+    <inertial>
+      <origin
+        xyz="-0.0107845425844135 -0.142447918607034 -0.00419433105634965"
+        rpy="0 0 0" />
+      <mass
+        value="0.28" />
+      <inertia
+        ixx="0.00428227718676599"
+        ixy="7.56023828320177E-06"
+        ixz="9.14996846504773E-06"
+        iyy="0.00137485448183489"
+        iyz="8.63391596716771E-06"
+        izz="0.00385649886773093" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robok/meshes/left_hipyaw.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robok/meshes/left_hipyaw.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="hipyawl"
+    type="revolute">
+    <origin
+      xyz="-0.0052029 0.026891 -0.019657"
+      rpy="1.5708 0 -1.5695" />
+    <parent
+      link="base_link" />
+    <child
+      link="left_hipyaw" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-0.784"
+      upper="0.784"
+      effort="10"
+      velocity="12" />
+  </joint>
+  <link
+    name="left_hiproll">
+    <inertial>
+      <origin
+        xyz="-0.0107845425844135 -0.142447918607034 -0.00419433105634964"
+        rpy="0 0 0" />
+      <mass
+        value="0.28" />
+      <inertia
+        ixx="0.00428227718676599"
+        ixy="7.56023828320181E-06"
+        ixz="9.14996846504773E-06"
+        iyy="0.00137485448183489"
+        iyz="8.63391596716706E-06"
+        izz="0.00385649886773093" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robok/meshes/left_hiproll.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robok/meshes/left_hiproll.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="hiprolll"
+    type="revolute">
+    <origin
+      xyz="-0.048775 -0.063842 0"
+      rpy="-3.1406 1.5708 3.1415" />
+    <parent
+      link="left_hipyaw" />
+    <child
+      link="left_hiproll" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-0.784"
+      upper="0.784"
+      effort="10"
+      velocity="0.784" />
+  </joint>
+  <link
+    name="left_hippitch">
+    <inertial>
+      <origin
+        xyz="-0.0107845425844135 -0.142447918607034 -0.00419433105634964"
+        rpy="0 0 0" />
+      <mass
+        value="0.28" />
+      <inertia
+        ixx="0.00428227718676599"
+        ixy="7.56023828320189E-06"
+        ixz="9.14996846504771E-06"
+        iyy="0.00137485448183489"
+        iyz="8.63391596716754E-06"
+        izz="0.00385649886773093" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robok/meshes/left_hippitch.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robok/meshes/left_hippitch.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="hippitchl"
+    type="revolute">
+    <origin
+      xyz="-0.0089572 -0.043273 0"
+      rpy="0 0 -0.59366" />
+    <parent
+      link="left_hiproll" />
+    <child
+      link="left_hippitch" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-0.784"
+      upper="0.784"
+      effort="10"
+      velocity="12" />
+  </joint>
+  <link
+    name="left_anklepitch">
+    <inertial>
+      <origin
+        xyz="-0.0107845425844135 -0.142447918607034 -0.00419433105634964"
+        rpy="0 0 0" />
+      <mass
+        value="0.28" />
+      <inertia
+        ixx="0.00428227718676599"
+        ixy="7.56023828320183E-06"
+        ixz="9.14996846504774E-06"
+        iyy="0.00137485448183489"
+        iyz="8.63391596716759E-06"
+        izz="0.00385649886773093" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robok/meshes/left_anklepitch.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robok/meshes/left_anklepitch.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="anklepitchl"
+    type="revolute">
+    <origin
+      xyz="0.0046502 -0.087559 0"
+      rpy="0 0 0.25743" />
+    <parent
+      link="left_hippitch" />
+    <child
+      link="left_anklepitch" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-0.784"
+      upper="0.784"
+      effort="10"
+      velocity="12" />
+  </joint>
+  <link
+    name="left_foot">
+    <inertial>
+      <origin
+        xyz="-0.0107845425844135 -0.142447918607034 -0.00419433105634964"
+        rpy="0 0 0" />
+      <mass
+        value="0.28" />
+      <inertia
+        ixx="0.00428227718676599"
+        ixy="7.56023828320183E-06"
+        ixz="9.14996846504773E-06"
+        iyy="0.00137485448183489"
+        iyz="8.63391596716688E-06"
+        izz="0.00385649886773093" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robok/meshes/left_foot.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robok/meshes/left_foot.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="footl"
+    type="revolute">
+    <origin
+      xyz="0.080808 -0.057712 0"
+      rpy="0 0 0.34904" />
+    <parent
+      link="left_anklepitch" />
+    <child
+      link="left_foot" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-0.784"
+      upper="0.784"
+      effort="10"
+      velocity="12" />
+  </joint>
+  <link
+    name="right_hipyaw">
+    <inertial>
+      <origin
+        xyz="-0.0107845425844135 -0.142447918607034 -0.00419433105634964"
+        rpy="0 0 0" />
+      <mass
+        value="0.28" />
+      <inertia
+        ixx="0.00428227718676599"
+        ixy="7.5602382832018E-06"
+        ixz="9.14996846504773E-06"
+        iyy="0.00137485448183489"
+        iyz="8.63391596716771E-06"
+        izz="0.00385649886773093" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robok/meshes/right_hipyaw.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robok/meshes/right_hipyaw.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="hipyawr"
+    type="revolute">
+    <origin
+      xyz="-0.0048992 -0.018108 -0.019657"
+      rpy="1.5708 0 1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="right_hipyaw" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-0.784"
+      upper="0.784"
+      effort="10"
+      velocity="12" />
+  </joint>
+  <link
+    name="right_hiproll">
+    <inertial>
+      <origin
+        xyz="-0.0107845425844135 -0.142447918607034 -0.00419433105634964"
+        rpy="0 0 0" />
+      <mass
+        value="0.28" />
+      <inertia
+        ixx="0.00428227718676599"
+        ixy="7.56023828320184E-06"
+        ixz="9.14996846504774E-06"
+        iyy="0.00137485448183489"
+        iyz="8.63391596716753E-06"
+        izz="0.00385649886773093" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robok/meshes/right_hiproll.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robok/meshes/right_hiproll.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="hiprollr"
+    type="continuous">
+    <origin
+      xyz="-0.048775 -0.063842 0"
+      rpy="0 -1.5708 0" />
+    <parent
+      link="right_hipyaw" />
+    <child
+      link="right_hiproll" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-0.784"
+      upper="0.784"
+      effort="10"
+      velocity="12" />
+  </joint>
+  <link
+    name="right_hippitch">
+    <inertial>
+      <origin
+        xyz="-0.0107845425844135 -0.142447918607034 -0.00419433105634964"
+        rpy="0 0 0" />
+      <mass
+        value="0.28" />
+      <inertia
+        ixx="0.00428227718676599"
+        ixy="7.56023828320189E-06"
+        ixz="9.14996846504771E-06"
+        iyy="0.00137485448183489"
+        iyz="8.63391596716754E-06"
+        izz="0.00385649886773093" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robok/meshes/right_hippitch.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robok/meshes/right_hippitch.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="hippitchr"
+    type="revolute">
+    <origin
+      xyz="-0.01048 -0.043273 0"
+      rpy="0 0 -0.59125" />
+    <parent
+      link="right_hiproll" />
+    <child
+      link="right_hippitch" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-0.784"
+      upper="0.784"
+      effort="10"
+      velocity="12" />
+  </joint>
+  <link
+    name="right_anklepitch">
+    <inertial>
+      <origin
+        xyz="-0.0107845425844135 -0.142447918607034 -0.00419433105634964"
+        rpy="0 0 0" />
+      <mass
+        value="0.28" />
+      <inertia
+        ixx="0.00428227718676599"
+        ixy="7.56023828320183E-06"
+        ixz="9.14996846504774E-06"
+        iyy="0.00137485448183489"
+        iyz="8.63391596716754E-06"
+        izz="0.00385649886773093" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robok/meshes/right_anklepitch.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robok/meshes/right_anklepitch.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="anklepitchr"
+    type="revolute">
+    <origin
+      xyz="0.0046502 -0.087559 0"
+      rpy="0 0 0.24642" />
+    <parent
+      link="right_hippitch" />
+    <child
+      link="right_anklepitch" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-0.784"
+      upper="0.784"
+      effort="10"
+      velocity="12" />
+  </joint>
+  <link
+    name="right_foot">
+    <inertial>
+      <origin
+        xyz="-0.0107845425844135 -0.142447918607034 -0.00419433105634964"
+        rpy="0 0 0" />
+      <mass
+        value="0.28" />
+      <inertia
+        ixx="0.00428227718676599"
+        ixy="7.56023828320187E-06"
+        ixz="9.14996846504771E-06"
+        iyy="0.00137485448183489"
+        iyz="8.63391596716748E-06"
+        izz="0.00385649886773093" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robok/meshes/right_foot.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robok/meshes/right_foot.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="footr"
+    type="revolute">
+    <origin
+      xyz="0.080808 -0.057712 0"
+      rpy="0 0 0.35878" />
+    <parent
+      link="right_anklepitch" />
+    <child
+      link="right_foot" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-0.784"
+      upper="0.784"
+      effort="10"
+      velocity="12" />
+  </joint>
+</robot>

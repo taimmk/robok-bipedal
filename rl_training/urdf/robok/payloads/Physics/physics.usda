@@ -1,0 +1,340 @@
+#usda 1.0
+(
+    customLayerData = {
+        string creator = "URDF USD Converter v0.1.3"
+    }
+    defaultPrim = "robok"
+    doc = """Generated from Composed Stage of root layer C:\\Users\\mkare\\AppData\\Local\\Temp\\tmplqpxs8ih\\robok.usdc
+
+
+Generated from Composed Stage of root layer C:\\Users\\mkare\\AppData\\Local\\Temp\\urdf_import_robok_c7xgcc__\\usdex_robok\\robok.usdc
+
+
+Generated from Composed Stage of root layer C:\\Users\\mkare\\AppData\\Local\\Temp\\urdf_import_robok_c7xgcc__\\temp_robok\\robok.usd
+
+
+Generated from Composed Stage of root layer E:\\Project\\ISAACSIM\\robot\\robok\\urdf\\robok_3\\payloads\\base.usd
+"""
+    kilogramsPerUnit = 1
+    metersPerUnit = 1
+    upAxis = "Z"
+)
+
+over "robok"
+{
+    over "Geometry"
+    {
+        over "base_link" (
+            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsArticulationRootAPI", "NewtonArticulationRootAPI", "PhysicsMassAPI"]
+        )
+        {
+            bool newton:selfCollisionEnabled = 0
+            point3f physics:centerOfMass = (-0.010784542, -0.14244792, -0.004194331)
+            float3 physics:diagonalInertia = (0.001374805, 0.0038563313, 0.0042824945)
+            float physics:mass = 0.28
+            quatf physics:principalAxes = (0.505557, -0.4930694, -0.49610338, -0.5051496)
+
+            over "left_hipyaw" (
+                prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+            )
+            {
+                point3f physics:centerOfMass = (-0.010784542, -0.14244792, -0.004194331)
+                float3 physics:diagonalInertia = (0.001374805, 0.0038563313, 0.0042824945)
+                float physics:mass = 0.28
+                quatf physics:principalAxes = (0.505557, -0.4930694, -0.49610338, -0.5051496)
+
+                over "left_hiproll" (
+                    prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+                )
+                {
+                    point3f physics:centerOfMass = (-0.010784542, -0.14244792, -0.004194331)
+                    float3 physics:diagonalInertia = (0.001374805, 0.0038563313, 0.0042824945)
+                    float physics:mass = 0.28
+                    quatf physics:principalAxes = (0.505557, -0.4930694, -0.49610338, -0.5051496)
+
+                    over "left_hippitch" (
+                        prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+                    )
+                    {
+                        point3f physics:centerOfMass = (-0.010784542, -0.14244792, -0.004194331)
+                        float3 physics:diagonalInertia = (0.001374805, 0.0038563313, 0.0042824945)
+                        float physics:mass = 0.28
+                        quatf physics:principalAxes = (0.505557, -0.4930694, -0.49610338, -0.5051496)
+
+                        over "left_anklepitch" (
+                            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+                        )
+                        {
+                            point3f physics:centerOfMass = (-0.010784542, -0.14244792, -0.004194331)
+                            float3 physics:diagonalInertia = (0.001374805, 0.0038563313, 0.0042824945)
+                            float physics:mass = 0.28
+                            quatf physics:principalAxes = (0.505557, -0.4930694, -0.49610338, -0.5051496)
+
+                            over "left_foot" (
+                                prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+                            )
+                            {
+                                point3f physics:centerOfMass = (-0.010784542, -0.14244792, -0.004194331)
+                                float3 physics:diagonalInertia = (0.001374805, 0.0038563313, 0.0042824945)
+                                float physics:mass = 0.28
+                                quatf physics:principalAxes = (0.505557, -0.4930694, -0.49610338, -0.5051496)
+                            }
+                        }
+                    }
+                }
+            }
+
+            over "right_hipyaw" (
+                prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+            )
+            {
+                point3f physics:centerOfMass = (-0.010784542, -0.14244792, -0.004194331)
+                float3 physics:diagonalInertia = (0.001374805, 0.0038563313, 0.0042824945)
+                float physics:mass = 0.28
+                quatf physics:principalAxes = (0.505557, -0.4930694, -0.49610338, -0.5051496)
+
+                over "right_hiproll" (
+                    prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+                )
+                {
+                    point3f physics:centerOfMass = (-0.010784542, -0.14244792, -0.004194331)
+                    float3 physics:diagonalInertia = (0.001374805, 0.0038563313, 0.0042824945)
+                    float physics:mass = 0.28
+                    quatf physics:principalAxes = (0.505557, -0.4930694, -0.49610338, -0.5051496)
+
+                    over "right_hippitch" (
+                        prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+                    )
+                    {
+                        point3f physics:centerOfMass = (-0.010784542, -0.14244792, -0.004194331)
+                        float3 physics:diagonalInertia = (0.001374805, 0.0038563313, 0.0042824945)
+                        float physics:mass = 0.28
+                        quatf physics:principalAxes = (0.505557, -0.4930694, -0.49610338, -0.5051496)
+
+                        over "right_anklepitch" (
+                            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+                        )
+                        {
+                            point3f physics:centerOfMass = (-0.010784542, -0.14244792, -0.004194331)
+                            float3 physics:diagonalInertia = (0.001374805, 0.0038563313, 0.0042824945)
+                            float physics:mass = 0.28
+                            quatf physics:principalAxes = (0.505557, -0.4930694, -0.49610338, -0.5051496)
+
+                            over "right_foot" (
+                                prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+                            )
+                            {
+                                point3f physics:centerOfMass = (-0.010784542, -0.14244792, -0.004194331)
+                                float3 physics:diagonalInertia = (0.001374805, 0.0038563313, 0.0042824945)
+                                float physics:mass = 0.28
+                                quatf physics:principalAxes = (0.505557, -0.4930694, -0.49610338, -0.5051496)
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    over "Physics"
+    {
+        def PhysicsRevoluteJoint "hipyawl" (
+            prepend apiSchemas = ["PhysicsDriveAPI:angular", "PhysicsJointStateAPI:angular"]
+        )
+        {
+            float drive:angular:physics:maxForce = 10
+            uniform token physics:axis = "Y"
+            custom rel physics:body0
+            prepend rel physics:body0 = </robok/Geometry/base_link>
+            custom rel physics:body1
+            prepend rel physics:body1 = </robok/Geometry/base_link/left_hipyaw>
+            point3f physics:localPos0 = (-0.0052029, 0.026891, -0.019657)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (0.50032306, 0.5003249, -0.49967673, -0.4996749)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+            float physics:lowerLimit = -44.91989
+            float physics:upperLimit = 44.91989
+            custom float urdf:limit:effort = 10
+            custom float urdf:limit:velocity = 12
+        }
+
+        def PhysicsRevoluteJoint "hiprolll" (
+            prepend apiSchemas = ["PhysicsDriveAPI:angular", "PhysicsJointStateAPI:angular"]
+        )
+        {
+            float drive:angular:physics:maxForce = 10
+            uniform token physics:axis = "X"
+            custom rel physics:body0
+            prepend rel physics:body0 = </robok/Geometry/base_link/left_hipyaw>
+            custom rel physics:body1
+            prepend rel physics:body1 = </robok/Geometry/base_link/left_hipyaw/left_hiproll>
+            point3f physics:localPos0 = (-0.048775, -0.063842, -8.6736174e-19)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (0.70710796, 0.0003837146, 0.7071054, -0.00038371343)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+            float physics:lowerLimit = -44.91989
+            float physics:upperLimit = 44.91989
+            custom float urdf:limit:effort = 10
+            custom float urdf:limit:velocity = 0.784
+        }
+
+        def PhysicsRevoluteJoint "hippitchl" (
+            prepend apiSchemas = ["PhysicsDriveAPI:angular", "PhysicsJointStateAPI:angular"]
+        )
+        {
+            float drive:angular:physics:maxForce = 10
+            uniform token physics:axis = "Z"
+            custom rel physics:body0
+            prepend rel physics:body0 = </robok/Geometry/base_link/left_hipyaw/left_hiproll>
+            custom rel physics:body1
+            prepend rel physics:body1 = </robok/Geometry/base_link/left_hipyaw/left_hiproll/left_hippitch>
+            point3f physics:localPos0 = (-0.0089572, -0.043273, 1.3877788e-17)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (0.9562685, 2.5424541e-17, -8.326673e-17, -0.2924903)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+            float physics:lowerLimit = -44.91989
+            float physics:upperLimit = 44.91989
+            custom float urdf:limit:effort = 10
+            custom float urdf:limit:velocity = 12
+        }
+
+        def PhysicsRevoluteJoint "anklepitchl" (
+            prepend apiSchemas = ["PhysicsDriveAPI:angular", "PhysicsJointStateAPI:angular"]
+        )
+        {
+            float drive:angular:physics:maxForce = 10
+            uniform token physics:axis = "Z"
+            custom rel physics:body0
+            prepend rel physics:body0 = </robok/Geometry/base_link/left_hipyaw/left_hiproll/left_hippitch>
+            custom rel physics:body1
+            prepend rel physics:body1 = </robok/Geometry/base_link/left_hipyaw/left_hiproll/left_hippitch/left_anklepitch>
+            point3f physics:localPos0 = (0.0046502, -0.087559, 2.7755576e-17)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (0.99172765, -1.7347235e-17, 1.2490009e-16, 0.12835991)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+            float physics:lowerLimit = -44.91989
+            float physics:upperLimit = 44.91989
+            custom float urdf:limit:effort = 10
+            custom float urdf:limit:velocity = 12
+        }
+
+        def PhysicsRevoluteJoint "footl" (
+            prepend apiSchemas = ["PhysicsDriveAPI:angular", "PhysicsJointStateAPI:angular"]
+        )
+        {
+            float drive:angular:physics:maxForce = 10
+            uniform token physics:axis = "Z"
+            custom rel physics:body0
+            prepend rel physics:body0 = </robok/Geometry/base_link/left_hipyaw/left_hiproll/left_hippitch/left_anklepitch>
+            custom rel physics:body1
+            prepend rel physics:body1 = </robok/Geometry/base_link/left_hipyaw/left_hiproll/left_hippitch/left_anklepitch/left_foot>
+            point3f physics:localPos0 = (0.080808, -0.057712, 0)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (0.98481, 9.362086e-17, 2.7755576e-17, 0.17363547)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+            float physics:lowerLimit = -44.91989
+            float physics:upperLimit = 44.91989
+            custom float urdf:limit:effort = 10
+            custom float urdf:limit:velocity = 12
+        }
+
+        def PhysicsRevoluteJoint "hipyawr" (
+            prepend apiSchemas = ["PhysicsDriveAPI:angular", "PhysicsJointStateAPI:angular"]
+        )
+        {
+            float drive:angular:physics:maxForce = 10
+            uniform token physics:axis = "Y"
+            custom rel physics:body0
+            prepend rel physics:body0 = </robok/Geometry/base_link>
+            custom rel physics:body1
+            prepend rel physics:body1 = </robok/Geometry/base_link/right_hipyaw>
+            point3f physics:localPos0 = (-0.0048992, -0.018108, -0.019657)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (0.49999815, 0.5, 0.50000185, 0.5)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+            float physics:lowerLimit = -44.91989
+            float physics:upperLimit = 44.91989
+            custom float urdf:limit:effort = 10
+            custom float urdf:limit:velocity = 12
+        }
+
+        def PhysicsRevoluteJoint "hiprollr" (
+            prepend apiSchemas = ["PhysicsDriveAPI:angular", "PhysicsJointStateAPI:angular"]
+        )
+        {
+            float drive:angular:physics:maxForce = 10
+            uniform token physics:axis = "X"
+            custom rel physics:body0
+            prepend rel physics:body0 = </robok/Geometry/base_link/right_hipyaw>
+            custom rel physics:body1
+            prepend rel physics:body1 = </robok/Geometry/base_link/right_hipyaw/right_hiproll>
+            point3f physics:localPos0 = (-0.048775, -0.063842, -8.6736174e-19)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (0.70710546, 2.3263802e-16, -0.7071081, 3.330669e-16)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+            custom float urdf:limit:effort = 10
+            custom float urdf:limit:velocity = 12
+        }
+
+        def PhysicsRevoluteJoint "hippitchr" (
+            prepend apiSchemas = ["PhysicsDriveAPI:angular", "PhysicsJointStateAPI:angular"]
+        )
+        {
+            float drive:angular:physics:maxForce = 10
+            uniform token physics:axis = "Z"
+            custom rel physics:body0
+            prepend rel physics:body0 = </robok/Geometry/base_link/right_hipyaw/right_hiproll>
+            custom rel physics:body1
+            prepend rel physics:body1 = </robok/Geometry/base_link/right_hipyaw/right_hiproll/right_hippitch>
+            point3f physics:localPos0 = (-0.01048, -0.043273, 1.3877788e-17)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (0.9566202, -4.696952e-16, -1.6653345e-16, -0.29133788)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+            float physics:lowerLimit = -44.91989
+            float physics:upperLimit = 44.91989
+            custom float urdf:limit:effort = 10
+            custom float urdf:limit:velocity = 12
+        }
+
+        def PhysicsRevoluteJoint "anklepitchr" (
+            prepend apiSchemas = ["PhysicsDriveAPI:angular", "PhysicsJointStateAPI:angular"]
+        )
+        {
+            float drive:angular:physics:maxForce = 10
+            uniform token physics:axis = "Z"
+            custom rel physics:body0
+            prepend rel physics:body0 = </robok/Geometry/base_link/right_hipyaw/right_hiproll/right_hippitch>
+            custom rel physics:body1
+            prepend rel physics:body1 = </robok/Geometry/base_link/right_hipyaw/right_hiproll/right_hippitch/right_anklepitch>
+            point3f physics:localPos0 = (0.0046502, -0.087559, -1.3877788e-17)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (0.99241924, 7.632783e-17, 6.938894e-17, 0.12289852)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+            float physics:lowerLimit = -44.91989
+            float physics:upperLimit = 44.91989
+            custom float urdf:limit:effort = 10
+            custom float urdf:limit:velocity = 12
+        }
+
+        def PhysicsRevoluteJoint "footr" (
+            prepend apiSchemas = ["PhysicsDriveAPI:angular", "PhysicsJointStateAPI:angular"]
+        )
+        {
+            float drive:angular:physics:maxForce = 10
+            uniform token physics:axis = "Z"
+            custom rel physics:body0
+            prepend rel physics:body0 = </robok/Geometry/base_link/right_hipyaw/right_hiproll/right_hippitch/right_anklepitch>
+            custom rel physics:body1
+            prepend rel physics:body1 = </robok/Geometry/base_link/right_hipyaw/right_hiproll/right_hippitch/right_anklepitch/right_foot>
+            point3f physics:localPos0 = (0.080808, -0.057712, 1.3877788e-17)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (0.9839527, -4.521123e-17, 1.3877788e-17, 0.17842948)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+            float physics:lowerLimit = -44.91989
+            float physics:upperLimit = 44.91989
+            custom float urdf:limit:effort = 10
+            custom float urdf:limit:velocity = 12
+        }
+    }
+}
+
